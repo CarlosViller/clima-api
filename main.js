@@ -5,7 +5,7 @@ var wicon = document.getElementById('wicon');
 var descripcion = document.getElementById('descripcion')
 
 function cargarCiudad(ciudad) {
-  $.getJSON(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=95176c8edea30e33338e0eaddd53a916&units=metric&lang=es.url`
+  $.getJSON(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=95176c8edea30e33338e0eaddd53a916&units=metric&lang=es.url`
   ,function(data) {
     container.style.visibility = "visible"
     ciudadHtm.textContent = data.name;
